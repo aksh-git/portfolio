@@ -1,0 +1,56 @@
+.container {
+  padding: 0 2rem;
+}
+.main {
+  min-height: 100vh;
+}
+.main h1{
+  margin: 0;
+  padding: 0.3rem 0;
+}
+.decp{
+  width: 70%;
+  padding: 1em 0 3em 0;
+}
+.skills , .social{
+  padding-bottom: 3em;
+}
+.skills p, .social p{
+  padding: 1em;
+}
+.skills a,.social a{
+  padding: 0.2rem;
+}
+.social a{
+  padding: .4rem;
+}
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-weight: 550;
+  
+}
+
+.logo {
+  height: 1.3em;
+  margin-left: 0.1rem;
+  transform: scale(0.855);
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
