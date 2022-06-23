@@ -3,9 +3,11 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #f2f2f2;
-  color: #1f1f1f;
   font-family: 'Raleway', sans-serif;
+  background: url('../assets/images/page-bg.webp');
+  min-height: 100vh;
+  min-width: 100%;
+  background-position: fixed;
 }
 
 a {
@@ -21,12 +23,12 @@ a {
   transform: scale(0.855);
 }
 .active{
-  background-color: rgb(241, 241, 241, 0.5);
-  backdrop-filter: blur(5px);
+  background: url('../assets/images/page-bg.webp');
   transform: scale(1.125);
   border-radius: 2px;
   width: 100%;
   color: #1f1f1f;
+  mix-blend-mode: screen;
 }
 .bold{
   font-weight: 600;
@@ -35,8 +37,8 @@ a {
   padding: 1rem;
 }
 .badge{
-  font-size: 1.1rem;
-  padding: 0.4rem 0.8rem;
+  font-size: 1.5rem;
+  padding: 0.4rem 0;
   border-radius: 3px;
   font-weight: 600;
   width: max-content;
@@ -45,4 +47,50 @@ a {
   align-items: center;
   gap: 0.2rem;
   color: #1f1f1f;
+}
+.badge .inner {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.badge .inner span{
+  font-size: .987rem;
+  font-weight: 500;
+}
+p a:hover{
+  filter: drop-shadow(-5px 5px 5px #121213);
+}
+@media only screen and (max-width: 520px) {
+  .mainSection{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+  .container{
+    padding: 0;
+  }
+  .badge{
+    font-size: 22px;
+  }
+  .badge .inner{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mainSection{
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .container{
+    padding: 5px;
+  }
+  .badge{
+    font-size: 22px;
+  }
+  .badge .inner{
+    display: block;
+  }
 }

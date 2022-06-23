@@ -6,7 +6,7 @@
 }
 .main h1{
   margin: 0;
-  padding: 0.3rem 0;
+  padding: 1rem 0 0 0;
 }
 .decp{
   width: 70%;
@@ -16,7 +16,7 @@
   padding-bottom: 3em;
 }
 .skills p, .social p{
-  padding: 1em;
+  padding: 0 1.5rem;
 }
 .skills a,.social a{
   padding: 0.2rem;
@@ -28,6 +28,14 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
+  border-top: 1px solid;
+  justify-content: center;
+  align-items: center;
+}
+.separator {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
   border-top: 1px solid;
   justify-content: center;
   align-items: center;
@@ -48,9 +56,16 @@
   transform: scale(0.855);
 }
 
-@media (max-width: 600px) {
-  .grid {
+@media only screen and (max-width: 520px) {
+  .headp{
+    font-size: 22px;
+  }
+  .decp{
+    padding: 0;
     width: 100%;
-    flex-direction: column;
+    font-size: 18px;
+  }
+  .skills{
+    
   }
 }

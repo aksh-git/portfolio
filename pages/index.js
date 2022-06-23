@@ -4,14 +4,14 @@ import Logo from '../components/logo'
 import styles from '../styles/Home.module.css'
 import { SiHey } from 'react-icons/si'
 import { MdWifiTethering } from 'react-icons/md'
-import { FaGreaterThan,FaLessThan } from 'react-icons/fa'
+import { FaGreaterThan, FaLessThan } from 'react-icons/fa'
 
 export default function Home(props) {
 
   let { bgColor, fgColor , acColor } = props.theme;
-  
+
   return (
-    <div style={{backgroundColor:bgColor,color:fgColor}} className={styles.container}>
+    <div className={styles.container}>
       <Head>
         <title>Akash Yadav | Full stack developer</title>
         <meta name="keywords" content="portfolio, full, stack, web, developer, akash yadav"></meta>
@@ -23,15 +23,16 @@ export default function Home(props) {
         <h1 className={styles.title}>
           Hey there!! <SiHey /> 
         </h1>
-        <p className="bolder">
+        <p className={`${styles.headp} bolder`}>
           I'm Akash Yadav, A passionate fullstack developer from India.
         </p>
         <p style={{color:acColor}} className={styles.decp}>
         Welcomes you!! i am a full stack web developer, i like computers, you know how these are changing lives of billions of people's & i'm also one of them. i love to code, this place is to represent my presence here on this online world. Have a look on my work if you got some time.<br/><br/>
         <strong>Thank you.. for visiting... Have a nice day!!</strong>
         </p>
+        <div tyle={{borderColor:acColor}} className={styles.separator}></div>
         <section className={styles.skills}>
-        <div style={{backgroundColor:acColor}} className='badge'> <FaLessThan />My Skills <FaGreaterThan /></div>
+        <div className='badge'><FaGreaterThan /><span className='inner'>Technologies <span>i works with</span></span></div>
         <p align="left">
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aksh-git/assets/main/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>
           <a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aksh-git/assets/main/skills/java-colored.svg" width="36" height="36" alt="Java" /></a>
@@ -53,8 +54,9 @@ export default function Home(props) {
           <a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aksh-git/assets/main/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
         </p>
         </section>
+        <div tyle={{borderColor:acColor}} className={styles.separator}></div>
         <section className={styles.social}>
-        <span style={{backgroundColor:acColor}} className='badge'><MdWifiTethering /> Connect with-me</span>
+        <div className='badge'><MdWifiTethering /> <span className='inner'>Connect <span>with-me</span></span></div>
           <p align="left"> 
           <a href="https://www.github.com/aksh-git" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aksh-git/assets/main/socials/github.svg" width="30" height="30" /></a> 
           <a href="http://www.instagram.com/ig_akash369" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aksh-git/assets/main/socials/instagram.svg" width="30" height="30" /></a> 
