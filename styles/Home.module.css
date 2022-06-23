@@ -7,16 +7,22 @@
 .main h1{
   margin: 0;
   padding: 1rem 0 0 0;
+  font-size: 40px;
+}
+.headp {
+  font-size: 22px;
+  margin-top: 10px;
 }
 .decp{
   width: 70%;
-  padding: 1em 0 3em 0;
+  padding: .5em 0 1em 0;
+  font-size: 18px;
 }
 .skills , .social{
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
 .skills p, .social p{
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 .skills a,.social a{
   padding: 0.2rem;

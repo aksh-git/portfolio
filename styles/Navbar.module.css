@@ -19,7 +19,7 @@
     overflow: hidden;
 }
 .navbar nav ul li {
-    padding: .2rem 0.3rem;
+    padding: .5rem 0.4rem;
     margin: 0.5rem 0;
     font-size: 1.179rem;
     font-weight: 550;
@@ -31,13 +31,12 @@
 }
 
 .navbar li:hover{
-    backdrop-filter: blur(5px);
-    background-color: rgb(241, 241, 241, 0.5);
-    transform: scale(1.135);
-    border-radius: 2px;
-    margin: .234rem 0;
-    width: 100%;
-    padding: 0.1rem;
+  backdrop-filter: blur(5px);
+  background-color: rgb(241, 241, 241, 0.2);
+  transform: scale(1.135);
+  border-radius: 2px;
+  margin: .234rem 0;
+  width: 100%;
 }
 .themeSwitch{
     display: flex;
@@ -102,7 +101,7 @@
   .slider.round:before {
     border-radius: 4px;
   }
-.menuicon, .crossicon{
+.menuicon, .crossicon, .mobnav{
   display: none;
 }
 @media only screen and (max-width: 520px) {
@@ -110,8 +109,12 @@
     position: fixed;
     margin: 0;
     padding: 0;
-    right: 0;
+    right: -100vw;
     width: 60%;
+    transition: right 250ms ease-in-out;
+  }
+  .mobnav{
+    display: flex;
   }
   .navbar nav ul{
     padding: 10%;
@@ -143,7 +146,7 @@
     display: block;
     position: fixed;
     margin: 15px;
-    right: 0;
+    right: 5px;
     font-size: 30px;
     cursor: pointer;
     filter: drop-shadow(0 0 2px #1f1f1f);

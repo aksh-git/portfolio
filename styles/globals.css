@@ -65,7 +65,7 @@ p a:hover{
     width: 100%;
   }
   .container{
-    padding: 0;
+    padding: 10px;
   }
   .badge{
     font-size: 22px;
