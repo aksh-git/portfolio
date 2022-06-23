@@ -102,11 +102,51 @@
   .slider.round:before {
     border-radius: 4px;
   }
-
+.menuicon, .crossicon{
+  display: none;
+}
 @media only screen and (max-width: 520px) {
   .navbar{
-    position: absolute;
-    left: -100vw;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    width: 60%;
+  }
+  .navbar nav ul{
+    padding: 10%;
+  }
+  .navbar nav ul li{
+    padding: 5% 10px;
+  }
+  .navbar li:hover{
+    padding: 5% 10px;
+  }
+  .crossicon{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 28px;
+    margin: 1px 0;
+    padding: 5px 10px;
+    align-items: center;
+    background-color: #b2b2b2;
+    width: max-content;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  .crossicon span{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .menuicon{
+    display: block;
+    position: fixed;
+    margin: 15px;
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px #1f1f1f);
   }
 }
 
