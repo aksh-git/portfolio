@@ -5,7 +5,7 @@ function ProjectCard(props) {
   const { title, decp, tools, imageURL, projectURL } = props.project;
   let { bgColor, fgColor , acColor } = props.theme;
   return (
-    <div onClick={()=>window.open(projectURL)} style={{color:fgColor,background:acColor+"2d"}} className={styles.projectCard}>
+    <div onClick={()=>window.open(projectURL)} style={{color:acColor,background:acColor+"2d"}} className={styles.projectCard}>
         <span className={styles.title}>{title}</span>
         <img src={imageURL} alt='Project-banner' />
         <span className={styles.decp}>{decp}</span>

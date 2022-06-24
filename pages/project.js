@@ -23,16 +23,15 @@ function project(props) {
   }, []);
 
   return (
-    <div className='container'>
+    <div className={styles.container}>
+      <h1>Projects</h1>
       <div style={{display:projects.length>1?'none':'flex',justifyContent:'center'}}>
         <Loder />
       </div>
       <div className={styles.pgrid}>
         {projects.map((proj)=>{
           return(
-          <div className=''>
             <ProjectCard theme={props.theme} project={proj} key={proj.projectURL}/>
-          </div>
           )
         })}
       </div>

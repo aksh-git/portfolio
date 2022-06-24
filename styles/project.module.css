@@ -1,19 +1,21 @@
+.container{
+    padding: 1rem 1rem;
+}
+.container h1{
+    margin: 0 0 5px 5px;
+    padding: 0;
+}
 .pgrid{
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
-@media only screen and (max-width: 1200px) {
+
+@media only screen and (max-width: 520px) {
     .pgrid{
-        grid-template-columns: auto auto auto;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .pgrid{
-        grid-template-columns: auto auto;
-    }
-}
-@media only screen and (max-width: 320px) {
-    .pgrid{
-        grid-template-columns: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+        width: 100%;
     }
 }
