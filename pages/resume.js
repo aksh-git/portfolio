@@ -5,6 +5,7 @@ import { BsTwitter,BsFillHeartFill } from 'react-icons/bs'
 import { IoIosRocket } from 'react-icons/io'
 import { FaGraduationCap } from 'react-icons/fa'
 import { AiOutlineAim, AiOutlineExperiment } from 'react-icons/ai'
+import Link from 'next/link'
 
 function resume(props) {
   const { bgColor, fgColor , acColor } = props.theme;
@@ -158,7 +159,7 @@ function resume(props) {
       </div>
       <div className={styles.moreInfo}>
         <h3>Got anything for me ?</h3>
-        <button>Do Email</button>
+        <Link href="/contact" rel="noreferrer"><button>Do Email</button></Link>
       </div>
     </div>
   )
