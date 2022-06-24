@@ -11,7 +11,7 @@ export default function Home(props) {
   let { bgColor, fgColor , acColor } = props.theme;
 
   return (
-    <div className={styles.container}>
+    <div  className={styles.container}>
       <Head>
         <title>Akash Yadav | Full stack developer</title>
         <meta name="keywords" content="portfolio, full, stack, web, developer, akash yadav"></meta>

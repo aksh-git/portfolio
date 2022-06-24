@@ -45,7 +45,6 @@ a {
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  color: #1f1f1f;
 }
 .badge .inner {
   display: flex;
@@ -59,6 +58,15 @@ a {
 p a:hover{
   filter: drop-shadow(-5px 5px 5px #121213);
 }
+.separator {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+  border-top: 1px solid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 @media only screen and (max-width: 520px) {
   .mainSection{
     margin: 0;
@@ -69,9 +77,10 @@ p a:hover{
   }
   .badge{
     font-size: 22px;
+    display: block;
   }
   .badge .inner{
-    display: block;
+    display: inline-grid;
   }
 }
 
@@ -87,8 +96,5 @@ p a:hover{
   }
   .badge{
     font-size: 22px;
-  }
-  .badge .inner{
-    display: block;
   }
 }

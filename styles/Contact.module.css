@@ -5,9 +5,6 @@
     margin: 0;
     padding: 0;
 }
-.social{
-    padding: 1rem;
-}
 .social p{
     padding: 0 1px;
 }
@@ -22,9 +19,95 @@
 }
 .part1{
     width: 45%;
-    padding: 10px;
+    padding: 15px;
+    border-right: 1px solid;
 }
 .part2{
     width: 45%;
+    padding: 15px;
+}
+.emailContainer{
     padding: 10px;
+    display: block;
+}
+.emailContainer form{
+    display: grid;
+    width: 60%;
+}
+.emailContainer form input,.emailContainer form textarea {
+    all: unset;
+    resize: none;
+    padding: 4px 8px;
+    font-size: 18px;
+    margin: 0.3rem 0;
+    border: 2px solid;
+    border-radius: 4px;
+}
+.emailContainer form input:focus,.emailContainer form textarea:focus{
+    box-shadow: 0 0 10px #b6b6b6;
+    transform: scale(1.1);
+    font-weight: 600;
+}
+.emailContainer form .formsbtn{
+    margin: .5rem 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.emailContainer form button{
+    all: unset;
+    padding: .4rem 1.2rem;
+    border: 2px dotted;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: filter 200ms ease-in;
+    font-weight: 600;
+    width: max-content;
+}
+.emailContainer form .formsbtn .cancel:hover{
+    filter: drop-shadow(0 0 10px #ca1b24);
+    border: 2px solid;
+}
+.emailContainer form .formsbtn .send{
+    border: 2px solid;
+}
+.emailContainer form .formsbtn .send:hover{
+    filter: drop-shadow(0 0 10px rgb(3, 212, 97));
+    border: 2px solid;
+}
+
+.emailContainer form button:active{
+    transform: scale(0.9);
+}
+.errorTv{
+    display: block;
+    color: rgb(202, 27, 36);
+    width: 60%;
+    margin: .5rem  0;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    margin: 7% 0 0 0;
+    text-align: center;
+}
+@media only screen and (max-width: 1100px) {
+    .divide{
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .part1,.part2{
+        width: 90%;
+        border: none;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .emailContainer form{
+        width: 100%;
+    }
+    .part2{
+        display: none;
+    }
 }
