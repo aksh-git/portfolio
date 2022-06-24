@@ -22,7 +22,7 @@ function Navbar(props) {
   }
   return (<>
     <div className={styles.menuicon}><HiOutlineMenuAlt3 onClick={()=>{setmobnav(mobnav==="0"?"-100vw":"0")}} /></div>
-    <div style={{backgroundColor:acColor+"",color:bgColor}} className={styles.navbar}>
+    <div style={{backgroundColor:acColor+"56",color:bgColor}} className={styles.navbar}>
       <nav>
         <ul>
           <Link href="/" rel="noreferrer"><li className={path==="/"?"active":""}> <GoHome />Home</li></Link>

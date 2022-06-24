@@ -1,0 +1,30 @@
+.container{
+    padding: 1rem 1rem;
+}
+.container h1{
+    margin: 0;
+    padding: 0;
+}
+.social{
+    padding: 1rem;
+}
+.social p{
+    padding: 0 1px;
+}
+.social p a{
+    padding: 0 7px;
+}
+.divide {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+}
+.part1{
+    width: 45%;
+    padding: 10px;
+}
+.part2{
+    width: 45%;
+    padding: 10px;
+}
