@@ -2,12 +2,15 @@
     padding: 10px;
     background: #ffffff;
     width: 220px;
+    max-height: 400px;
+    height: 100%;
     border-radius: 12px;
     box-shadow: #0000003d 0px 3px 8px;
     z-index: 10;
     margin: 5px;
     cursor: pointer;
     backdrop-filter: blur(2px);
+    position: relative;
 }
 .projectCard img{
     margin-top: 1%;
@@ -21,14 +24,22 @@
 }
 .projectCard .decp{
     font-size: 14px;
+    overflow: hidden;
 }
 .projectCard .tools{
     font-size: 12px;
 }
 .projectCard .foot{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+}
+.foot span{
+    padding: 0 5px;
+    overflow: hidden;
 }
 .projectCard:hover{
     box-shadow: #000000ea 0px 3px 8px;

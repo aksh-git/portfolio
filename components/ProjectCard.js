@@ -9,8 +9,8 @@ function ProjectCard(props) {
         <span className={styles.title}>{title}</span>
         <img src={imageURL} alt='Project-banner' />
         <span className={styles.decp}>{decp}</span>
-        <hr />
         <span className={styles.foot}>
+          <hr />
           <span className={styles.tools}><span className='bold'>Tools used -</span> {tools}</span>
         </span>
     </div>
