@@ -1,0 +1,43 @@
+.projectCard{
+    padding: 10px;
+    background: #ffffff;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: #0000003d 0px 3px 8px;
+    z-index: 10;
+    margin: 5px;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+}
+.projectCard img{
+    margin-top: 1%;
+    width: 100%;
+    height: 120px;
+    border-radius: 5px 5px 0 0;
+}
+.projectCard .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.projectCard .decp{
+    font-size: 14px;
+}
+.projectCard .tools{
+    font-size: 12px;
+}
+.projectCard .foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projectCard:hover{
+    box-shadow: #000000ea 0px 3px 8px;
+}
+@media screen and (max-width: 320px) {
+    .projectCard{
+        width: 100%;
+        margin: 5px;
+        left: 0;
+        right: 0;
+    }
+}

@@ -1,0 +1,19 @@
+.pgrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+@media only screen and (max-width: 1200px) {
+    .pgrid{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .pgrid{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .pgrid{
+        grid-template-columns: auto;
+    }
+}
