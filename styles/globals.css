@@ -4,7 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Raleway', sans-serif;
-  background: url('../assets/images/page-bg.webp');
+  background: url('https://raw.githubusercontent.com/aksh-git/portfolio/master/assets/images/page-bg.webp');
   min-height: 100vh;
   min-width: 100%;
 }
@@ -22,11 +22,12 @@ a {
   transform: scale(0.855);
 }
 .active{
-  background: url('../assets/images/page-bg.webp');
+  background: url('https://raw.githubusercontent.com/aksh-git/portfolio/master/assets/images/page-bg.webp');
   transform: scale(1.125);
   border-radius: 2px;
   width: 100%;
   color: #1f1f1f;
+  font-weight: 600;
   mix-blend-mode: screen;
 }
 .bold{

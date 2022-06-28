@@ -22,18 +22,18 @@ function Navbar(props) {
   }
   return (<>
     <div className={styles.menuicon}><HiOutlineMenuAlt3 onClick={()=>{setmobnav(mobnav==="0"?"-100vw":"0")}} /></div>
-    <div style={{backgroundColor:acColor+"56",color:bgColor}} className={styles.navbar}>
+    <div style={{backgroundColor:acColor+"56",color:acColor}} className={styles.navbar}>
       <nav>
         <ul>
           <Link href="/" rel="noreferrer"><li className={path==="/"?"active":""}> <GoHome />Home</li></Link>
           <Link href="/Project" rel="noreferrer"><li className={path==="/Project"?"active":""}><BiCodeAlt />Projects</li></Link>
-          <Link href="/resume" rel="noreferrer"><li className={path==="/resume"?"active":""}><BiCertification />Resume</li></Link>
+          <Link href="/resume" rel="noreferrer"><li classNprojectame={path==="/resume"?"active":""}><BiCertification />Resume</li></Link>
           <Link href="/Contact" rel="noreferrer"><li className={path==="/Contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
           {/*<Link href="/about" rel="noreferrer"><li className={path==="/about"?"active":""}><RiUser6Line />About</li></Link>*/}
         </ul>
       </nav>
       <div style={{margin:"1rem"}} className='logo'>
-        <Logo color={bgColor}/>
+        <Logo color={acColor}/>
       </div>
     </div>
     <div style={{backgroundColor:acColor+"",color:bgColor,right:mobnav}} className={`${styles.navbar} ${styles.mobnav}`}>
@@ -41,9 +41,9 @@ function Navbar(props) {
       <div onClick={()=>{setmobnav(mobnav==="0"?"-100vw":"0")}} className={styles.crossicon}><span>Close</span><AiOutlineRight/></div>
         <ul>
           <Link href="/" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/"?"active":""}> <GoHome />Home</li></Link>
-          <Link href="/project" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/project"?"active":""}><BiCodeAlt />Projects</li></Link>
+          <Link href="/Project" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/Project"?"active":""}><BiCodeAlt />Projects</li></Link>
           <Link href="/resume" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/resume"?"active":""}><BiCertification />Resume</li></Link>
-          <Link href="/contact" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
+          <Link href="/Contact" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/Contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
           {/*<Link href="/about" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/about"?"active":""}><RiUser6Line />About</li></Link>*/}
         </ul>
       </nav>
