@@ -26,9 +26,9 @@ function Navbar(props) {
       <nav>
         <ul>
           <Link href="/" rel="noreferrer"><li className={path==="/"?"active":""}> <GoHome />Home</li></Link>
-          <Link href="/Project" rel="noreferrer"><li className={path==="/project"?"active":""}><BiCodeAlt />Projects</li></Link>
+          <Link href="/Project" rel="noreferrer"><li className={path==="/Project"?"active":""}><BiCodeAlt />Projects</li></Link>
           <Link href="/resume" rel="noreferrer"><li className={path==="/resume"?"active":""}><BiCertification />Resume</li></Link>
-          <Link href="/Contact" rel="noreferrer"><li className={path==="/contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
+          <Link href="/Contact" rel="noreferrer"><li className={path==="/Contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
           {/*<Link href="/about" rel="noreferrer"><li className={path==="/about"?"active":""}><RiUser6Line />About</li></Link>*/}
         </ul>
       </nav>
