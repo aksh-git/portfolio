@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import styles from '../styles/Contact.module.css'
 import Logo from '../components/Logo'
 import { ImMail4 } from 'react-icons/im'
+import Image from 'next/image';
 
-function contact(props) {
+function Contact(props) {
+
   const { bgColor, fgColor , acColor } = props.theme;
   const [error, seterror] = useState("Due to some internal error,email cound not be sent, please use email from app option.");
 
@@ -19,9 +21,9 @@ function contact(props) {
           </span>
         </div>
         <p align="left">
-          <a href="http://www.instagram.com/ig_akash369" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aksh-git/assets/main/socials/instagram.svg" width="30" height="30" /></a> 
-          <a href="https://www.linkedin.com/in/akash-yadav-36aa56230/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="30" height="30" /></a>
-          <a href="https://www.twitter.com/akash_369_" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aksh-git/assets/main/socials/twitter.svg" width="30" height="30" /></a>
+          <a href="http://www.instagram.com/ig_akash369" target="_blank" rel="noreferrer"><Image src="https://raw.githubusercontent.com/aksh-git/assets/main/socials/instagram.svg" width="30" height="30" alt="instagram" /></a> 
+          <a href="https://www.linkedin.com/in/akash-yadav-36aa56230/" target="_blank" rel="noreferrer"><Image src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="30" height="30" alt="linkedin" /></a>
+          <a href="https://www.twitter.com/akash_369_" target="_blank" rel="noreferrer"><Image src="https://raw.githubusercontent.com/aksh-git/assets/main/socials/twitter.svg" width="30" height="30" alt="twitter" /></a>
         </p>
         <div className='separator'></div>
         <div className='badge'>
@@ -39,7 +41,7 @@ function contact(props) {
           </span>
         </div>
         <p>
-          <a href="https://www.github.com/aksh-git" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aksh-git/assets/main/socials/github.svg" width="30" height="30" /></a> 
+          <a href="https://www.github.com/aksh-git" target="_blank" rel="noreferrer"><Image src="https://raw.githubusercontent.com/aksh-git/assets/main/socials/github.svg" width="30" height="30" alt="github" /></a> 
         </p><div className='separator'></div>
       </div>
         </div>
@@ -76,4 +78,4 @@ function contact(props) {
   )
 } 
 
-export default contact
+export default Contact

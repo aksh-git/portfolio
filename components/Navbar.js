@@ -29,7 +29,7 @@ function Navbar(props) {
           <Link href="/project" rel="noreferrer"><li className={path==="/project"?"active":""}><BiCodeAlt />Projects</li></Link>
           <Link href="/resume" rel="noreferrer"><li className={path==="/resume"?"active":""}><BiCertification />Resume</li></Link>
           <Link href="/contact" rel="noreferrer"><li className={path==="/contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
-          <Link href="/about" rel="noreferrer"><li className={path==="/about"?"active":""}><RiUser6Line />About</li></Link>
+          {/*<Link href="/about" rel="noreferrer"><li className={path==="/about"?"active":""}><RiUser6Line />About</li></Link>*/}
         </ul>
       </nav>
       <div style={{margin:"1rem"}} className='logo'>
@@ -44,7 +44,7 @@ function Navbar(props) {
           <Link href="/project" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/project"?"active":""}><BiCodeAlt />Projects</li></Link>
           <Link href="/resume" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/resume"?"active":""}><BiCertification />Resume</li></Link>
           <Link href="/contact" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
-          <Link href="/about" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/about"?"active":""}><RiUser6Line />About</li></Link>
+          {/*<Link href="/about" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/about"?"active":""}><RiUser6Line />About</li></Link>*/}
         </ul>
       </nav>
       <div style={{margin:"1rem"}} className='logo'>

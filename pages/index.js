@@ -24,10 +24,10 @@ export default function Home(props) {
           Hey there!! <SiHey /> 
         </h1>
         <p className={`${styles.headp} bolder`}>
-          I'm Akash Yadav, A passionate fullstack developer from India.
+          I&#39;m Akash Yadav, A passionate fullstack developer from India.
         </p>
         <p style={{color:acColor}} className={styles.decp}>
-        Welcomes you!! i am a full stack web developer, i like computers, you know how these are changing lives of billions of people's & i'm also one of them. i love to code, this place is to represent my presence here on this online world. Have a look on my work if you got some time.<br/><br/>
+        Welcomes you!! i am a full stack web developer, i like computers, you know how these are changing lives of billions of people&#39;s & i&#39;m also one of them. i love to code, this place is to represent my presence here on this online world. Have a look on my work if you got some time.<br/><br/>
         <strong>Thank you.. for visiting... Have a nice day!!</strong>
         </p>
         <div tyle={{borderColor:acColor}} className={styles.separator}></div>

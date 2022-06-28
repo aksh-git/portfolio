@@ -3,7 +3,7 @@ import Loder from '../components/Loder';
 import ProjectCard from '../components/ProjectCard';
 import styles from '../styles/project.module.css'
 
-function project(props) {
+function Project(props) {
   const { bgColor, fgColor , acColor } = props.theme;
   const [projects, setProjects] = useState([]);
 
@@ -39,4 +39,4 @@ function project(props) {
   )
 }
 
-export default project
+export default Project

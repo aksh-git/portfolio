@@ -42,6 +42,7 @@
     margin: 0.3rem 0;
     border: 2px solid;
     border-radius: 4px;
+    transition: transform 150ms ease-in-out;
 }
 .emailContainer form input:focus,.emailContainer form textarea:focus{
     box-shadow: 0 0 10px #b6b6b6;
