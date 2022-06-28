@@ -159,7 +159,7 @@ function resume(props) {
       </div>
       <div className={styles.moreInfo}>
         <h3>Got anything for me ?</h3>
-        <Link href="/contact" rel="noreferrer"><button>Do Email</button></Link>
+        <Link href="/Contact" rel="noreferrer"><button>Do Email</button></Link>
       </div>
     </div>
   )
