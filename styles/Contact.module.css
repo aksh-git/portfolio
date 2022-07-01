@@ -30,6 +30,11 @@
     padding: 10px;
     display: block;
 }
+.loder{
+    width: max-content;
+    height: 35px;
+    overflow: hidden;
+}
 .emailContainer form{
     display: grid;
     width: 60%;
