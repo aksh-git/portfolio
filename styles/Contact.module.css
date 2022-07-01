@@ -66,7 +66,7 @@
     border: 2px dotted;
     border-radius: 2rem;
     cursor: pointer;
-    transition: filter 200ms ease-in;
+    transition: transform 250ms ease-in-out;
     font-weight: 600;
     width: max-content;
 }
@@ -97,6 +97,38 @@
     margin: 7% 0 0 0;
     text-align: center;
 }
+.emailstatus{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    border-radius: 10px ;
+    background-color: #6b6b6b36;
+    backdrop-filter: blur(20px);
+    padding: 1rem 0;
+    animation: popout 300ms ease;
+    -webkit-animation: popout 300ms ease;
+}
+.emailstatus .banner{
+    text-align: center;
+    font-size: 100px;
+    filter: drop-shadow(0 0 40px rgb(3, 212, 97));
+    margin-top: -10px;
+    padding: 0 10px;
+}
+.banner .icon{
+    margin: 0;
+    padding: 0;
+}
+.banner .headt{
+    font-size: 24px;
+    font-weight: 600;
+}
+.banner .decp{
+    padding: 5px 0;
+    font-size: 16px;
+}
 @media only screen and (max-width: 1100px) {
     .divide{
         display: block;
@@ -116,4 +148,14 @@
     .part2{
         display: none;
     }
+}
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.1)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.1)}
+    to{-webkit-transform:scale(1)}
 }

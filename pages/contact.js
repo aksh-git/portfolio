@@ -3,17 +3,19 @@ import styles from '../styles/Contact.module.css'
 import Logo from '../components/Logo'
 import { ImMail4 } from 'react-icons/im'
 import Loder from '../components/Loder'
+import { HiMail} from 'react-icons/hi'
 
 function Contact(props) {
   const host = "http://localhost:3000";
   const { bgColor, fgColor , acColor } = props.theme;
   const [error, seterror] = useState("");
-  const [loading, setloading] = useState(0)
-  const [cname, setcname] = useState("")
-  const [cmail, setcmail] = useState("")
-  const [cmessage, setcmessage] = useState("")
-  const [csubject, setcsubject] = useState("")
-  
+  const [loading, setloading] = useState(0);
+  const [cname, setcname] = useState("");
+  const [cmail, setcmail] = useState("");
+  const [cmessage, setcmessage] = useState("");
+  const [csubject, setcsubject] = useState("");
+  const [sentmail, setsentmail] = useState(false) ;
+
   function clearinputs(){
     setcname("");
     setcmail("");
@@ -75,7 +77,7 @@ function Contact(props) {
               console.log(response);
               const result = await response.json();
               if(result.success){
-                alert("Message sent successfully.")
+                setsentmail(true)
                 setloading(0);
                 clearinputs();
               }else{
@@ -87,8 +89,10 @@ function Contact(props) {
             }
           }
         }
+        
       }
     }
+    setloading(0);
   }
 
   return (
@@ -136,7 +140,7 @@ function Contact(props) {
               <Loder />
             </div>}
           </div>
-          <div className={styles.emailContainer}>
+          <div style={{display:sentmail?"none":"block"}} className={styles.emailContainer}>
             {error.length>2 && 
               <div className={styles.errorTv}>
               <span>{error}</span>
@@ -147,12 +151,16 @@ function Contact(props) {
               <input value={cmail} onChange={handleInputMail} type="email" placeholder='your_name@email.com' required/>
               <textarea value={cmessage} onChange={handleInputMessage} rows="4" placeholder='Please write your message here...' maxLength={500} line="4" required></textarea>
               <div className={styles.formsbtn}>
-                <button className={styles.send}>Send</button>
+                <button className={styles.send}>{loading===1?"Sending your message...":"Send"}</button>
               </div>
             </form>
           </div>
-          <div className={styles.emailstatus}>
-
+          <div style={{display:sentmail?"block":"none"}} className={styles.emailstatus}>
+            <div className={styles.banner}>
+              <HiMail classname={styles.icon}/>
+              <div className={styles.decp}><strong>Your message has been sent successfully.</strong></div>
+              <div className={styles.headt}>Thank you for reaching me.</div>
+            </div>
           </div>
           <div style={{margin:"1rem 0 0 0"}} >
             <span style={{fontSize:'12px'}}>Please provide genuine information, so that we can communicate easily.</span>
