@@ -5,8 +5,7 @@ import { RiUser6Line } from 'react-icons/ri';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { MdConnectWithoutContact } from 'react-icons/md';
 import { AiOutlineRight } from 'react-icons/ai';
-import React from 'react';
-import { useState } from 'react'
+import React, { useEffect,useState } from 'react';
 import styles from '../styles/Navbar.module.css';
 import Logo from './Logo';
 import Link from 'next/link';
@@ -16,7 +15,14 @@ function Navbar(props) {
 
   let { bgColor, fgColor , acColor } = props.theme;
   const router = useRouter()
-  let path = router.pathname;
+
+  const [path, setpath] = useState(router.pathname)
+  useEffect(() => {
+    if(router.isReady){
+      setpath(router.pathname)
+    }
+  }, [router])
+  
   const [mobnav, setmobnav] = useState("-100vw");
   function closmobnav(){
     setmobnav("-100vw")
@@ -27,9 +33,9 @@ function Navbar(props) {
       <nav>
         <ul>
           <Link href="/" rel="noreferrer"><li className={path==="/"?"active":""}> <GoHome />Home</li></Link>
-          <Link href="/Project" rel="noreferrer"><li className={path==="/Project"?"active":""}><BiCodeAlt />Projects</li></Link>
-          <Link href="/resume" rel="noreferrer"><li classNprojectame={path==="/resume"?"active":""}><BiCertification />Resume</li></Link>
-          <Link href="/Contact" rel="noreferrer"><li className={path==="/Contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
+          <Link href="/Project" rel="noreferrer"><li className={path==="/project"?"active":""}><BiCodeAlt />Projects</li></Link>
+          <Link href="/resume" rel="noreferrer"><li className={path==="/resume"?"active":""}><BiCertification />Resume</li></Link>
+          <Link href="/Contact" rel="noreferrer"><li className={path==="/contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
           {/*<Link href="/about" rel="noreferrer"><li className={path==="/about"?"active":""}><RiUser6Line />About</li></Link>*/}
         </ul>
       </nav>
@@ -42,9 +48,9 @@ function Navbar(props) {
       <div onClick={()=>{setmobnav(mobnav==="0"?"-100vw":"0")}} className={styles.crossicon}><span>Close</span><AiOutlineRight/></div>
         <ul>
           <Link href="/" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/"?"active":""}> <GoHome />Home</li></Link>
-          <Link href="/Project" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/Project"?"active":""}><BiCodeAlt />Projects</li></Link>
+          <Link href="/Project" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/project"?"active":""}><BiCodeAlt />Projects</li></Link>
           <Link href="/resume" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/resume"?"active":""}><BiCertification />Resume</li></Link>
-          <Link href="/Contact" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/Contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
+          <Link href="/Contact" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/contact"?"active":""}><MdConnectWithoutContact />Contact</li></Link>
           {/*<Link href="/about" rel="noreferrer"><li onClick={()=>{closmobnav()}} className={path==="/about"?"active":""}><RiUser6Line />About</li></Link>*/}
         </ul>
       </nav>
