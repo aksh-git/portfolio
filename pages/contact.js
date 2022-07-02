@@ -67,7 +67,7 @@ function Contact(props) {
             seterror("");
             //API CALL
             try {
-              const response = await fetch(`http://${window.location.href.split("/")[2]}/api/sendMail`,{
+              const response = await fetch(`${window.location.href.split("/")[0]}//${window.location.href.split("/")[2]}/api/sendMail`,{
                 method:'POST',
                 headers: {
                  "Accept": "*/*",
@@ -87,6 +87,7 @@ function Contact(props) {
               }
             } catch (error) {
               setloading(0);
+              seterror(error.message)
             }
           }
         }
@@ -158,7 +159,7 @@ function Contact(props) {
           </div>
           <div style={{display:sentmail?"block":"none"}} className={styles.emailstatus}>
             <div className={styles.banner}>
-              <HiMail classname={styles.icon}/>
+              <HiMail className={styles.icon}/>
               <div className={styles.decp}><strong>Your message has been sent successfully.</strong></div>
               <div className={styles.headt}>Thank you for reaching me.</div>
             </div>

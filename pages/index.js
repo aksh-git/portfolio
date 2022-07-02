@@ -1,4 +1,4 @@
-import Head from 'next/head'
+
 import Logo from '../components/Logo'
 import styles from '../styles/Home.module.css'
 import { SiHey } from 'react-icons/si'
@@ -11,13 +11,6 @@ export default function Home(props) {
 
   return (
     <div  className={styles.container}>
-      <Head>
-        <title>Akash Yadav | Full stack developer</title>
-        <meta name="keywords" content="portfolio, full, stack, web, developer, akash yadav"></meta>
-        <meta name="description" content="Hey there!! i'm Akash Yadav, A passionate fullstack developer from India. check out my profile here.." />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Hey there!! <SiHey /> 
