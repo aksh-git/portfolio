@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Logo from '../components/logo'
+import Logo from '../components/Logo'
 import styles from '../styles/Home.module.css'
 import { SiHey } from 'react-icons/si'
 import { MdWifiTethering } from 'react-icons/md'

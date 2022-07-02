@@ -14,7 +14,7 @@ function Contact(props) {
   const [cmail, setcmail] = useState("");
   const [cmessage, setcmessage] = useState("");
   const [csubject, setcsubject] = useState("");
-  const [sentmail, setsentmail] = useState(false) ;
+  const [sentmail, setsentmail] = useState(false);
 
   
   function clearinputs(){
