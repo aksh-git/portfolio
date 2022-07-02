@@ -1,6 +1,8 @@
 import nodemailer from 'nodemailer';
+
 const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
+const SMTP_MAIL_TO = process.env.SMTP_MAIL_TO;
 
 const validateEmail = (email) => {
     return String(email)
@@ -62,9 +64,9 @@ export default function handler(req, res) {
         });
         var mailOptions = {
             from: SMTP_USER,
-            to: "ann0m@proton.me",
+            to: SMTP_MAIL_TO,
             subject: csubject+' Web PortFolio Contact',
-            html: "<h2>NAME : "+cname +"<h2>"+"<h3>Email : "+cmail +"<h3><p>"+cbody+"</p>"
+            html: "<h3>NAME : "+cname +"<h3>"+"<h4>Email : "+cmail +"<h><p>"+cbody+"</p>"
         };
         var result = verify(req);
         if(result==="SUCCESS"){

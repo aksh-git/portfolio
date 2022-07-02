@@ -6,7 +6,7 @@ import Loder from '../components/Loder'
 import { HiMail} from 'react-icons/hi'
 
 function Contact(props) {
-  const host = "http://localhost:3000";
+
   const { bgColor, fgColor , acColor } = props.theme;
   const [error, seterror] = useState("");
   const [loading, setloading] = useState(0);
@@ -16,6 +16,7 @@ function Contact(props) {
   const [csubject, setcsubject] = useState("");
   const [sentmail, setsentmail] = useState(false) ;
 
+  
   function clearinputs(){
     setcname("");
     setcmail("");
@@ -66,7 +67,7 @@ function Contact(props) {
             seterror("");
             //API CALL
             try {
-              const response = await fetch(`${host}/api/sendMail`,{
+              const response = await fetch(`http://${window.location.href.split("/")[2]}/api/sendMail`,{
                 method:'POST',
                 headers: {
                  "Accept": "*/*",
