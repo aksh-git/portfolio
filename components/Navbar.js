@@ -8,7 +8,7 @@ import { AiOutlineRight } from 'react-icons/ai';
 import React from 'react';
 import { useState } from 'react'
 import styles from '../styles/Navbar.module.css';
-import Logo from './logo';
+import Logo from './Logo';
 import Link from 'next/Link';
 
 function Navbar(props) {
