@@ -25,7 +25,7 @@ function resume(props) {
           </div>
           <div className={styles.ritem} >
             <BsTwitter className={styles.icon} />
-            <span><a rel="noreffer" href='https://twitter.com/akash_369_'>@akash_369_</a></span>
+            <span><a rel="noreffer" href='https://twitter.com/akashydav'>@akashydav</a></span>
           </div><br/>
           <div className={styles.mutliItemArea}>
             <div className={styles.rhead} >
