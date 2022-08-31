@@ -68,6 +68,9 @@ function resume(props) {
               <div className={styles.ritem}>
                 <span><strong>Write -</strong> Hindi, English, Punjabi</span>
               </div>
+              <div className={styles.ritem}>
+                <span className='text-sm'><strong>Currently learing :</strong> Japanese</span>
+              </div>
             </div>
           </div>
         </div>

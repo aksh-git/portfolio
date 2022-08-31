@@ -43,10 +43,10 @@
     margin: 0 0 .3rem -5px;
 }
 .rhead .icon{
-    font-size: 24px;
+    font-size: 22px;
 }
 .rhead span{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 .resume .part2{
@@ -80,7 +80,7 @@
     gap: 15px;
 }
 .dhead .headicon span{
-    font-size: 20px;
+    font-size: 18px;
 }
 .dhead span{
     font-size: 14px;
@@ -147,6 +147,13 @@
     }
     .resume .part2{
         width: 100%;
+    }
+    .rhead .icon{
+        font-size: 20px;
+    }
+    .rhead span{
+        font-size: 18px;
+        font-weight: 600;
     }
     .moreInfo{
         display: block;
