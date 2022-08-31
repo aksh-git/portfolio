@@ -22,6 +22,7 @@ function raiseError(err_msg){
     }else if(err_msg==="ERR_SHORT_SUBJECT"){
         return "Kindly prove a subject or purpose of contact."
     }else{
+        console.log(err_msg)
         return "Something went wrong...Please give me few moments to fix this..."
     }
 }
@@ -51,12 +52,12 @@ export default function handler(req, res) {
     if(req.method==="POST"){
         const { cmail, csubject, cbody, cname } = req.body;
         var transporter = nodemailer.createTransport({
-            host: "smtp-mail.outlook.com", // hostname
-            secureConnection: false, // TLS requires secureConnection to be false
-            port: 587, // port for secure SMTP
-            tls: {
-                ciphers:'SSLv3'
-            },
+            host: 'smtp.zoho.in', // hostname
+            secure: true, // use SSL
+            port: 465, // port for secure SMTP
+            // tls: {
+            //     ciphers:'SSLv3'
+            // },
             auth: {
               user: SMTP_USER,
               pass: SMTP_PASS
@@ -66,7 +67,7 @@ export default function handler(req, res) {
             from: SMTP_USER,
             to: SMTP_MAIL_TO,
             subject: csubject+' Web PortFolio Contact',
-            html: "<h3>NAME : "+cname +"<h3>"+"<h4>Email : "+cmail +"<h><p>"+cbody+"</p>"
+            html: "<h><p>"+cbody+"</p>"+"===============================<br>Contact Info : <br><h5>NAME :<h5>"+cname +"<h5>Email :</h5> "+cmail
         };
         var result = verify(req);
         if(result==="SUCCESS"){
