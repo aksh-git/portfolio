@@ -6,8 +6,10 @@
     padding: 0;
 }
 .pgrid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 @media only screen and (max-width: 520px) {
