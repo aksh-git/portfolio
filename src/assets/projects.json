@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "title": "CampusFlow",
+            "description": "CampusFlow is an innovative education management software designed to automate and streamline various academic processes in educational institutions. It is a system that manages student information, academic records, schedules, assignments, and communication between students, teachers, and administrators.",
+            "techStack": [
+                "Node Js",
+                "Express Js",
+                "MongoDB",
+                "Js",
+                "bcrypt Js"
+            ],
+            "startedDate": "Today",
+            "completionDate": "Tomorrow",
+            "github_url": "https://github.com/aksh-git/CampusFlowPublic/#readme",
+            "live_url": "https://aksh-git.github.io/CampusFlowPublic",
+            "banner_src": "/images/discord.webp"
+        },
+        {
+            "title": "SiME",
+            "description": "SIME - (Simple Image Editor) - A Next.js webapp simplifying image enhancement with intuitive filters and operations. Streamlined interface for quick and easy image refinement, ensuring professional-quality results.",
+            "techStack": [
+                "Next.js",
+                "Js"
+            ],
+            "github_url": "https://github.com/aksh-git/sime/",
+            "live_url": "https://sime-akash.netlify.app/",
+            "banner_src": "/images/sime-banner.png"
+        },
+        {
+            "title": "WordSearch",
+            "description": "Word Search is a game, in this there is a grid of alphabets, by using those alphabets you have to make meaningful words, this uses Dictionary API to validate words.",
+            "techStack": [
+                "Dictionary API",
+                "Js"
+            ],
+            "github_url": "https://github.com/aksh-git/wordsearch/",
+            "live_url": "https://aksh-git.github.io/wordsearch/",
+            "banner_src": "/images/word-search.png"
+        },
+        {
+            "title": "Chess",
+            "description": "Have fun challenging the computers !.",
+            "techStack": [
+                "Cheesboard.js",
+                "Js"
+            ],
+            "github_url": "https://github.com/aksh-git/chess/",
+            "live_url": "https://aksh-git.github.io/chess/",
+            "banner_src": "/images/chess-banner.png"
+        }
+    ]
+}
