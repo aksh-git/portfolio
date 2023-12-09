@@ -8,9 +8,9 @@ import ResumeSection from './resumeSection'
 function MainSection() {
   return (
     <section id="about" className='cursor-auto max-h-screen max-w-screen bg-bgcolor/90 md:rounded-t-xl scroll-smooth'>
-      <div className='h-full w-full flex cursor-default p-4 md:p-6 gap-6 md:gap-6'>
+      <div className='h-full w-full flex cursor-default p-4 md:p-6 gap-8 md:gap-6'>
         {/* SIDEBAR */}
-        <aside className='w-min h-full md:w-[320px]  sticky top-0 pt-4'>
+        <aside className='w-min h-full md:w-[320px] sticky top-0 pt-4'>
           <Sidebar />
         </aside>
 

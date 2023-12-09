@@ -2,24 +2,28 @@ import Image from 'next/image'
 import React from 'react'
 import SkillIcon from '../Skill'
 import Label from '../label'
+import GroupLabel from './GroupLabel'
 
 function TechStack() {
     return (
         <section id="techStack" className='w-full'>
-            <Label >Tech-Stack</Label>
-            <div className='flex flex-wrap gap-8 '>
+            <Label>Tech-Stack</Label>
+            <div className='flex flex-wrap gap-8 mt-4'>
                 {/* Languages */}
-                <div className='box w-full md:w-max md:max-w-[250px]'>
+                <GroupLabel tag={"Languages"}>
                     {/* <div className='pl-4 p-1 border-l-4 border-primary text-gray-600 font-medium'>Languages</div> */}
                     <div className='flex flex-wrap gap-4 p-4'>
                         <SkillIcon tag={"Java"}>
                             <Image width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg`} alt='Java'></Image>
                         </SkillIcon>
                         <SkillIcon tag={"Rust"}>
-                            <Image className='' width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg`} alt='Python'></Image>
+                            <Image className='' width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg`} alt='Rust'></Image>
                         </SkillIcon>
                         <SkillIcon tag={"Python"}>
                             <Image width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg`} alt='Python'></Image>
+                        </SkillIcon>
+                        <SkillIcon tag={"GoLang"}>
+                            <Image className='' width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg`} alt='GoLang'></Image>
                         </SkillIcon>
                         <SkillIcon tag={"TypeScript"}>
                             <Image className='rounded-lg' width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg`} alt='TypeScript'></Image>
@@ -28,10 +32,10 @@ function TechStack() {
                             <Image className='rounded-lg' width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`} alt='JavaScript'></Image>
                         </SkillIcon>
                     </div>
-                </div>
+                </GroupLabel>
 
                 {/* Backend */}
-                <div className='box w-full md:w-max md:max-w-[250px]'>
+                <GroupLabel tag={"Backend"}>
                     {/* <div className='pl-4 p-1 border-l-4 border-primary text-gray-600 font-medium'>Front-End</div> */}
                     <div className='flex flex-wrap gap-4 p-4'>
                         <SkillIcon tag={"Node Js"}>
@@ -44,10 +48,10 @@ function TechStack() {
                             <Image className='' width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg`} alt='Express'></Image>
                         </SkillIcon>
                     </div>
-                </div>
+                </GroupLabel>
 
                 {/* Databases */}
-                <div className='box w-full md:w-max md:max-w-[250px]'>
+                <GroupLabel tag={"Databases"}>
                     {/* <div className='pl-4 p-1 border-l-4 border-primary text-gray-600 font-medium'>Front-End</div> */}
                     <div className='flex flex-wrap gap-4 p-4'>
                         <SkillIcon tag={"MongoDB"}>
@@ -60,10 +64,10 @@ function TechStack() {
                             <Image className='rounded-lg' width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg`} alt='PostgreSQL'></Image>
                         </SkillIcon>
                     </div>
-                </div>
+                </GroupLabel>
 
                 {/* FrontEnd */}
-                <div className='box w-full md:w-max md:max-w-[250px]'>
+                <GroupLabel tag={"FrontEnd"}>
                     {/* <div className='pl-4 p-1 border-l-4 border-primary text-gray-600 font-medium'>Front-End</div> */}
                     <div className='flex flex-wrap gap-4 p-4'>
                         <SkillIcon tag={"React Js"}>
@@ -79,10 +83,10 @@ function TechStack() {
                             <Image width={40} height={40} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg`} alt='CSS'></Image>
                         </SkillIcon>
                     </div>
-                </div>
+                </GroupLabel>
 
                 {/* DEVOPS */}
-                <div className='box w-full md:w-max md:max-w-[250px]'>
+                <GroupLabel tag={"DevOps"}>
                     {/* <div className='pl-4 p-1 border-l-4 border-primary text-gray-600 font-medium'>Front-End</div> */}
                     <div className='flex flex-wrap gap-4 p-4'>
                         <SkillIcon tag={"Git"}>
@@ -105,7 +109,7 @@ function TechStack() {
                         </SkillIcon>
 
                     </div>
-                </div>
+                </GroupLabel>
             </div>
         </section>
     )

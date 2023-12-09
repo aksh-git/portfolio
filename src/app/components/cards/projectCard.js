@@ -8,7 +8,7 @@ function ProjectCard(props) {
   return (
     <div className="w-full md:max-w-[250px] min-h-[14rem] shadow-lg bg-primary/10 backdrop-blur-sm rounded-lg z-1">
       <div className='rounded-sm p-4'>
-        <Image className="w-full rounded-xl h-[7.5rem]" src={banner_src} alt={title + "-banner"} height={140} width={250} />
+        <Image className="w-full rounded-xl h-36 md:h-[7.5rem]" src={banner_src} alt={title + "-banner"} height={140} width={250} />
       </div>
       {/** BUTTONS */}
       <div className='-mt-10 w-full flex justify-end items-center px-4 gap-2 z-10'>
