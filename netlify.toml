@@ -1,7 +1,6 @@
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "https://ydevakash.vercel.app"
   status = 200
-  force = true 
+  force = false 
   headers = {X-From = "Netlify"}
-  signed = "API_SIGNATURE_TOKEN"
